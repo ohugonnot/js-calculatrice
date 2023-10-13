@@ -3,7 +3,7 @@ import {useEffect, useRef, useState} from "react";
 
 function App() {
 
-    const [screen, setScreen] = useState("1+1")
+    const [screen, setScreen] = useState("10000")
     const screenRef = useRef(null)
     const [result, setResult] = useState(null)
     const [error, setError] = useState(false)
@@ -45,7 +45,7 @@ function App() {
                     let pos = Math.min(endPos + 3, screen.length + 1)
                     setTimeout(() => screenEl.setSelectionRange(pos, pos), 0)
                 } else {
-                    setScreen((oldScreen) => oldScreen.substring(0, startPos) + input + oldScreen.substring(endPos))
+                        setScreen((oldScreen) => oldScreen.substring(0, startPos) + input + oldScreen.substring(endPos))
                     let pos = Math.min(startPos + 1, screen.length + 1)
                     setTimeout(() => screenEl.setSelectionRange(pos, pos), 0)
                 }
@@ -64,6 +64,7 @@ function App() {
                 break
             case input === 'del':
                 setScreen("")
+                setResult(null)
                 break
             case input === '=':
                 try {
