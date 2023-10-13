@@ -3,7 +3,7 @@
 ### Instructions
 
 - Dynamiser la calculette en HTML/CSS à l'aide de javascript
-- Utiliser la POO avec des classes
+- Utiliser la POO avec des classes ou une framework comme REACT ou VueJS
 - Utiliser des evenements pour interagir avec l'object Calculatrice
 - Essayer de factoriser au maximum le code et les evenements pour avoir le code le plus simple et le plus facilement
   maintenable
