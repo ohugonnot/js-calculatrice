@@ -1,0 +1,44 @@
+.App {
+    text-align: center;
+    padding: 20px;
+}
+
+.calculator {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.calculator-screen {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.calculator-buttons button {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.clear-button {
+    grid-column: span 2;
+}
+
+.equal-button {
+    grid-column: span 2;
+}
+
+.calculator-result {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
